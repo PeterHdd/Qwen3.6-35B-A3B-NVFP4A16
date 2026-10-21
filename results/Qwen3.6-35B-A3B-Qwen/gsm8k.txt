@@ -1,0 +1,6 @@
+local-chat-completions ({'model': 'bench', 'base_url': 'http://localhost:8000/v1/chat/completions', 'num_concurrent': 64, 'max_retries': 3, 'tokenized_requests': False, 'tokenizer_backend': None, 'timeout': 3600}), gen_kwargs: ({'do_sample': True, 'temperature': 1.0, 'top_p': 0.95, 'top_k': 20, 'min_p': 0.0, 'max_gen_toks': 32000, 'presence_penalty': 1.5, 'seed': 42}), limit: None, num_fewshot: 0, batch_size: 1
+|     Tasks     |Version|     Filter     |n-shot|  Metric   |   |Value |   |Stderr|
+|---------------|------:|----------------|-----:|-----------|---|-----:|---|-----:|
+|gsm8k_cot_llama|      4|flexible-extract|     0|exact_match|↑  |0.9212|±  |0.0074|
+|               |       |strict-match    |     0|exact_match|↑  |0.9196|±  |0.0075|
+

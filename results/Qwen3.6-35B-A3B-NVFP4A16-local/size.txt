@@ -1,0 +1,1 @@
+24G	./Qwen3.6-35B-A3B-NVFP4A16

@@ -1,0 +1,23 @@
+local-chat-completions ({'model': 'bench', 'base_url': 'http://localhost:8000/v1/chat/completions', 'num_concurrent': 64, 'max_retries': 3, 'tokenized_requests': False, 'tokenizer_backend': None, 'timeout': 3600}), gen_kwargs: ({'do_sample': True, 'temperature': 1.0, 'top_p': 0.95, 'top_k': 20, 'min_p': 0.0, 'max_gen_toks': 32000, 'presence_penalty': 1.5, 'seed': 42}), limit: 100.0, num_fewshot: 0, batch_size: 1
+|       Tasks       |Version|   Filter   |n-shot|  Metric   |   |Value|   |Stderr|
+|-------------------|------:|------------|-----:|-----------|---|----:|---|-----:|
+|mmlu_pro_llama     |      1|strict_match|     0|exact_match|↑  |0.835|±  |0.0096|
+| - biology         |      1|strict_match|     0|exact_match|↑  |0.890|±  |0.0314|
+| - business        |      1|strict_match|     0|exact_match|↑  |0.890|±  |0.0314|
+| - chemistry       |      1|strict_match|     0|exact_match|↑  |0.910|±  |0.0288|
+| - computer_science|      1|strict_match|     0|exact_match|↑  |0.900|±  |0.0302|
+| - economics       |      1|strict_match|     0|exact_match|↑  |0.920|±  |0.0273|
+| - engineering     |      1|strict_match|     0|exact_match|↑  |0.860|±  |0.0349|
+| - health          |      1|strict_match|     0|exact_match|↑  |0.790|±  |0.0409|
+| - history         |      1|strict_match|     0|exact_match|↑  |0.700|±  |0.0461|
+| - law             |      1|strict_match|     0|exact_match|↑  |0.690|±  |0.0465|
+| - math            |      1|strict_match|     0|exact_match|↑  |0.950|±  |0.0219|
+| - other           |      1|strict_match|     0|exact_match|↑  |0.660|±  |0.0476|
+| - philosophy      |      1|strict_match|     0|exact_match|↑  |0.740|±  |0.0441|
+| - physics         |      1|strict_match|     0|exact_match|↑  |0.960|±  |0.0197|
+| - psychology      |      1|strict_match|     0|exact_match|↑  |0.830|±  |0.0378|
+
+|    Groups    |Version|   Filter   |n-shot|  Metric   |   |Value|   |Stderr|
+|--------------|------:|------------|-----:|-----------|---|----:|---|-----:|
+|mmlu_pro_llama|      1|strict_match|     0|exact_match|↑  |0.835|±  |0.0096|
+

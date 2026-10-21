@@ -1,0 +1,23 @@
+local-chat-completions ({'model': 'bench', 'base_url': 'http://localhost:8000/v1/chat/completions', 'num_concurrent': 64, 'max_retries': 3, 'tokenized_requests': False, 'tokenizer_backend': None, 'timeout': 3600}), gen_kwargs: ({'do_sample': True, 'temperature': 1.0, 'top_p': 0.95, 'top_k': 20, 'min_p': 0.0, 'max_gen_toks': 32000, 'presence_penalty': 1.5, 'seed': 42}), limit: 100.0, num_fewshot: 0, batch_size: 1
+|       Tasks       |Version|   Filter   |n-shot|  Metric   |   |Value |   |Stderr|
+|-------------------|------:|------------|-----:|-----------|---|-----:|---|-----:|
+|mmlu_pro_llama     |      1|strict_match|     0|exact_match|↑  |0.8371|±  |0.0097|
+| - biology         |      1|strict_match|     0|exact_match|↑  |0.9200|±  |0.0273|
+| - business        |      1|strict_match|     0|exact_match|↑  |0.8800|±  |0.0327|
+| - chemistry       |      1|strict_match|     0|exact_match|↑  |0.9100|±  |0.0288|
+| - computer_science|      1|strict_match|     0|exact_match|↑  |0.8600|±  |0.0349|
+| - economics       |      1|strict_match|     0|exact_match|↑  |0.9000|±  |0.0302|
+| - engineering     |      1|strict_match|     0|exact_match|↑  |0.8200|±  |0.0386|
+| - health          |      1|strict_match|     0|exact_match|↑  |0.8100|±  |0.0394|
+| - history         |      1|strict_match|     0|exact_match|↑  |0.7000|±  |0.0461|
+| - law             |      1|strict_match|     0|exact_match|↑  |0.7200|±  |0.0451|
+| - math            |      1|strict_match|     0|exact_match|↑  |0.9400|±  |0.0239|
+| - other           |      1|strict_match|     0|exact_match|↑  |0.7300|±  |0.0446|
+| - philosophy      |      1|strict_match|     0|exact_match|↑  |0.7700|±  |0.0423|
+| - physics         |      1|strict_match|     0|exact_match|↑  |0.9400|±  |0.0239|
+| - psychology      |      1|strict_match|     0|exact_match|↑  |0.8200|±  |0.0386|
+
+|    Groups    |Version|   Filter   |n-shot|  Metric   |   |Value |   |Stderr|
+|--------------|------:|------------|-----:|-----------|---|-----:|---|-----:|
+|mmlu_pro_llama|      1|strict_match|     0|exact_match|↑  |0.8371|±  |0.0097|
+

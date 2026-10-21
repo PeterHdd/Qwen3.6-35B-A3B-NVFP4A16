@@ -1,0 +1,13 @@
+# Model weights live on Hugging Face, not GitHub
+Qwen3.6-35B-A3B-NVFP4A16/
+Qwen3.6-35B-A3B-NVFP4/
+*.safetensors
+
+# vLLM startup logs: noisy, add nothing to the results
+results/*/server.log
+
+# Python / editor clutter
+__pycache__/
+*.pyc
+.venv/
+.vscode/

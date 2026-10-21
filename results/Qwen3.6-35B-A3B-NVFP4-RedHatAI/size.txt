@@ -1,0 +1,1 @@
+24G	/home/peter/.cache/huggingface/hub/models--RedHatAI--Qwen3.6-35B-A3B-NVFP4/snapshots/e94a930c8e9b8a7d3763e449289c261c9c7d3e5e
